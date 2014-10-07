@@ -20,7 +20,7 @@ public class OperacionesColeccion {
                 System.out.print(separator + operando.toString());
                     result += operando.calcular();
             }
-            separator = operando.getNombre();
+            separator = "+";
         }
         System.out.print(">>> ");
         return result;

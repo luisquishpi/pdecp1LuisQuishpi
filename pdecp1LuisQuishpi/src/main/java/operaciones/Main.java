@@ -8,8 +8,8 @@ public class Main {
 
         System.out.println("Total1:" + operacionesColeccion.total());
         operacionesColeccion.add(new Suma(5, 8));
-        operacionesColeccion.add(new Suma(1, 2));
-        operacionesColeccion.add(new Suma(7, 9));
+        operacionesColeccion.add(new Resta(8, 4));
+        operacionesColeccion.add(new Resta(9, 5));
 
         System.out.println("Total2:" + operacionesColeccion.total());
     }
