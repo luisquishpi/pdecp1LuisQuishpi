@@ -27,6 +27,6 @@ public class Suma extends Operaciones {
     }
     @Override
     public String toString() {
-        return "[" + this.valor1 + "+" + this.valor2 + "]";
+        return "[" + this.valor1 + this.getNombre() + this.valor2 + "]";
     }
 }
