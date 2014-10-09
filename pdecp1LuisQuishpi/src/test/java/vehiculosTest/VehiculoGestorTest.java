@@ -32,7 +32,7 @@ public class VehiculoGestorTest {
 
     @Test
     public void testToString() {
-        assertEquals("Coche[Id: 1, Descripción: Description, Categoría: A]\n", vehiculoGestor.toString());
+        assertEquals("Coches[Id: 1, Descripción: Description, Categoría: A]\n", vehiculoGestor.toString());
     }
 
 }
