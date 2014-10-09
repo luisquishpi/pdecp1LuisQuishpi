@@ -19,4 +19,22 @@ public class VehiculoGestor {
         vehiculoLista.add(vehiculo);
     }
 
+    public double precio(int id, int dias) {
+        for (Vehiculo vehiculo : vehiculoLista) {
+            if (vehiculo.getId() == id) {
+                return vehiculo.precio(dias);
+            }
+        }
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        String texto = "";
+        for (Vehiculo vehiculo : vehiculoLista) {
+            texto += vehiculo.toString() + "\n";
+        }
+        return texto;
+    }
+
 }
