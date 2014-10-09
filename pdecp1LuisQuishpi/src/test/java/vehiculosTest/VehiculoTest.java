@@ -11,14 +11,14 @@ public abstract class VehiculoTest {
 
     @Test
     public void testGetId() {
-        Vehiculo vh = this.vehiculo(1, "Description");
-        assertEquals(1, vh.getId());
+        Vehiculo vehic = this.vehiculo(1, "Description");
+        assertEquals(1, vehic.getId());
     }
 
     @Test
     public void testGetDescripcion() {
-        Vehiculo vh = this.vehiculo(1, "Desccription");
-        assertEquals("Description", vh.getDescripcion());
+        Vehiculo vehic = this.vehiculo(1, "Desccription");
+        assertEquals("Description", vehic.getDescripcion());
     }
 
 }
