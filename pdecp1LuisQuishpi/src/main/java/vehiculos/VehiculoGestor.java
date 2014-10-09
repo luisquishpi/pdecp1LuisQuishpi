@@ -6,7 +6,7 @@ public class VehiculoGestor {
 
     private static VehiculoGestor vehiculoGestor = null;
 
-    protected ArrayList<Vehiculo> vehiculoLista = new ArrayList<Vehiculo>();
+    private ArrayList<Vehiculo> vehiculoLista = new ArrayList<Vehiculo>();
 
     public static VehiculoGestor getInstance() {
         if (vehiculoGestor == null) {
@@ -19,10 +19,10 @@ public class VehiculoGestor {
         vehiculoLista.add(vehiculo);
     }
 
-    public double precio(int id, int dias) {
+    public double precio(int id, int diasAlquilados) {
         for (Vehiculo vehiculo : vehiculoLista) {
             if (vehiculo.getId() == id) {
-                return vehiculo.precio(dias);
+                return vehiculo.precio(diasAlquilados);
             }
         }
         return 0;
