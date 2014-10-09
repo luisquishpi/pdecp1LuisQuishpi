@@ -1,9 +1,9 @@
 package vehiculos;
 
-public class Coche extends Vehiculo {
+public class Coches extends Vehiculo {
     private Categorias categoria;
 
-    public Coche(int id, String descripcion, String categoria) {
+    public Coches(int id, String descripcion, String categoria) {
         super(id, descripcion);
         this.categoria = Categorias.valueOf(categoria);
     }

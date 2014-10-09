@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.Before;
 
 import vehiculos.Categorias;
-import vehiculos.Coche;
+import vehiculos.Coches;
 import vehiculos.VehiculoGestor;
 
 public class VehiculoGestorTest {
@@ -17,7 +17,7 @@ public class VehiculoGestorTest {
     @Before
     public void init() {
         vehiculoGestor = new VehiculoGestor();
-        vehiculoGestor.add(new Coche(1, "Description", Categorias.A.categoria));
+        vehiculoGestor.add(new Coches(1, "Description", Categorias.A.categoria));
     }
 
     @Test

@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import vehiculos.Categorias;
-import vehiculos.Coche;
+import vehiculos.Coches;
 import vehiculos.Vehiculo;
 
 import org.junit.Before;
@@ -15,7 +15,7 @@ public class CocheTest {
 
     @Before
     public void before() {
-        vehiculo = new Coche(1, "Description", Categorias.A.categoria);
+        vehiculo = new Coches(1, "Description", Categorias.A.categoria);
     }
 
     @Test
@@ -36,7 +36,7 @@ public class CocheTest {
 
     @Test
     public void testGetCategoria() {
-        assertEquals(Categorias.A, ((Coche) vehiculo).getCategoria());
+        assertEquals(Categorias.A, ((Coches) vehiculo).getCategoria());
     }
 
 }
