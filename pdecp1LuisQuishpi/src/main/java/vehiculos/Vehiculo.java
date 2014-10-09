@@ -18,4 +18,12 @@ public abstract class Vehiculo {
         return this.id;
     }
 
+    public abstract double precio(int dia);
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "[Id: " + getId() + ", Descripción :"
+                + getDescripcion() + "]";
+    }
+
 }
