@@ -11,18 +11,11 @@ public class SumaTest {
 
     @Test
     public void testCalcular() {
-        assertEquals(5.0, suma.calcular(), 10e-5);
+        assertEquals(5, suma.calcular(), 10e-5);
     }
 
     @Test
     public void testGetNombre() {
         assertEquals("+", suma.getNombre());
     }
-
-    @Test
-    public void testSuma() {
-        assertEquals(2, suma.getValor1());
-        assertEquals(3, suma.getValor2());
-    }
-
 }
