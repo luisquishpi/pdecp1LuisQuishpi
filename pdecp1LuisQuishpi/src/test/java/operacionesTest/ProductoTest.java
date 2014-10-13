@@ -15,7 +15,7 @@ public class ProductoTest {
     }
     @Test
     public void testCalcular() {
-        assertEquals(4, producto.calcular());
+        assertEquals(12, producto.calcular());
     }
 
     @Test
@@ -25,7 +25,7 @@ public class ProductoTest {
 
     @Test
     public void testProducto() {
-        assertEquals(4, producto.calcular());
+        assertEquals(12, producto.calcular());
     }
 
     @Test
