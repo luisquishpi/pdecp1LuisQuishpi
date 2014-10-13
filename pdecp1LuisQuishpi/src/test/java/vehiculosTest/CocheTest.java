@@ -26,7 +26,7 @@ public class CocheTest {
 
     @Test
     public void testToString() {
-        assertEquals("Coche[Id: 1, Descripción: Description, Categoría: A]", vehiculo.toString());
+        assertEquals("Coches[Id: 1, Descripción: Description, Categoría: A]", vehiculo.toString());
     }
 
     @Test

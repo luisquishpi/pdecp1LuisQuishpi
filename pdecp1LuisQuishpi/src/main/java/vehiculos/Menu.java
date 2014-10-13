@@ -1,12 +1,12 @@
 package vehiculos;
 
 public class Menu {
-    public void iniciar() {
+    
+    public static void iniciar() {
         new MenuControlador();
     }
 
     public static void main(String[] args) {
-        Menu menu = new Menu();
-        menu.iniciar();
+        iniciar();
     }
 }

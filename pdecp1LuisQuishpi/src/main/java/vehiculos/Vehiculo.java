@@ -1,6 +1,7 @@
 package vehiculos;
 
 public abstract class Vehiculo {
+    
     private String descripcion;
 
     private int id;

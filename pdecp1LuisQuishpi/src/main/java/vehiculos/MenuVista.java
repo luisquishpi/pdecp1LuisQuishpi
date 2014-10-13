@@ -3,12 +3,13 @@ package vehiculos;
 import upm.jbb.IO;
 
 public class MenuVista {
+    
     public MenuVista(MenuControlador menuControlador) {
-        IO.in.addController(menuControlador, false);
+        IO.in.addController(menuControlador);
     }
 
-    public Vehiculo añadir(String name) {
-        return (Vehiculo) IO.in.read(name, "Valores de vehiculo: ");
+    public Vehiculo add(String nombreClase) {
+        return (Vehiculo) IO.in.read(nombreClase, "Vehículo: ");
     }
 
     public void mostrarVehiculos(VehiculoGestor vehiculoGestor) {
